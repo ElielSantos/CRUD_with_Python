@@ -20,7 +20,7 @@
 
 #DELETE
 #nome_produto = "biscoito"
-#comando = f'DELETE FROM vendas WHERE nome_produto "{nome_produto}"
+#comando = f'DELETE FROM vendas WHERE nome_produto = "{nome_produto}"'
 #cursor.execute(comando)
 #conexao.commit() 
 
@@ -42,7 +42,7 @@ cursor = conexao.cursor() #1 abre a conexao
 
 #CRUD #aqui abre os crud entre o #1 e o #2
 nome_produto = "halls1"
-comando = f'DELETE FROM vendas WHERE nome_produto "{nome_produto}"'
+comando = f'DELETE FROM vendas WHERE nome_produto = "{nome_produto}"'
 cursor.execute(comando)
 conexao.commit() #editar banco de dados
 
